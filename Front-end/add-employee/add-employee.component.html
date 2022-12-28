@@ -1,0 +1,21 @@
+<form (ngSubmit)="save(); EmployeeForm.reset()" #EmployeeForm>
+
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input [(ngModel)] = "addEmployee.name" id = "name" name = "name" type="text" class="form-control" >
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input [(ngModel)] = "addEmployee.email" class="form-control" id = "email" name = "email" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="department">Department</label>
+        <input [(ngModel)] = "addEmployee.department" id = "department" name = "department" type="text" class="form-control" >
+    </div>
+    
+        <input type="Submit" value="Submit" class="btn btn-primary">
+    
+</form>
+
+
+
